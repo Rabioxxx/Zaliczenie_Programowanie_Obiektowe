@@ -28,7 +28,7 @@ namespace Zaliczenie_Programowanie_Obiektowe
         }
         public virtual void Wypisz()
         {
-            Console.Write(Nazwa + "," + Cena + "," + SprzedanychSztuk + ",");
+            Console.Write("Nazwa: " + Nazwa + "\n" + "Cena: " + Cena + " zł\n" + "Sprzedanych sztuk: " + SprzedanychSztuk + "\n");
         }
         public float Zysk()
         {

@@ -20,7 +20,7 @@ namespace Zaliczenie_Programowanie_Obiektowe
         public new virtual void Wypisz()
         {
             base.Wypisz();
-            Console.Write(Rok_termin + ",");
+            Console.Write("Termin ważności: " + Rok_termin + "\n");
         }
 
         public bool Przeterminowany()

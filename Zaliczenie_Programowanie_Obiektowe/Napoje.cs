@@ -20,7 +20,7 @@ namespace Zaliczenie_Programowanie_Obiektowe
         public new void Wypisz()
         {
             base.Wypisz();
-            Console.Write(Pojemnosc + "\n");
+            Console.Write("Pojemność: " + Pojemnosc + "\n");
         }
     }
 }

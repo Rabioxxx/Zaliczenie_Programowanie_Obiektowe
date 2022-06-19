@@ -11,7 +11,7 @@ namespace Zaliczenie_Programowanie_Obiektowe
         private float masa;
         private bool niebezpieczny;
 
-        public Chemia(float cena, string nazwa, float masa, bool niebezpieczny) : base(nazwa, cena)
+        public Chemia(string nazwa, float cena, float masa, bool niebezpieczny) : base(nazwa, cena)
         {
             Masa = masa;
             Niebezpieczny = niebezpieczny;
@@ -24,7 +24,7 @@ namespace Zaliczenie_Programowanie_Obiektowe
         public override void Wypisz()
         {
             base.Wypisz();
-            Console.Write(Masa + "," + Niebezpieczny + "\n");
+            Console.Write("Masa: " + Masa + "\n" + "Niebezpieczny: " + Niebezpieczny + "\n");
         }
     }
 }

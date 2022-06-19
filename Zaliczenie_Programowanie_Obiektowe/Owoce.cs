@@ -20,7 +20,7 @@ namespace Zaliczenie_Programowanie_Obiektowe
         public override void Wypisz()
         {
             base.Wypisz();
-            Console.Write(Masa + "\n");
+            Console.Write("Masa: " + Masa + "\n");
         }
     }
 }
