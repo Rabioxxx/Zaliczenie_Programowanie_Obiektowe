@@ -214,7 +214,17 @@ namespace Zaliczenie_Programowanie_Obiektowe
                                 }
                                 break;
                             case "owoce":
-                                checkList(owoceList, indexInput);
+                                if (indexInput > owoceList.Count ||
+                                    indexInput < 1 ||
+                                    owoceList.Count == 0)
+                                {
+                                    Console.WriteLine("\nError, nie ma takiego towaru.\n");
+                                }
+                                else
+                                {
+                                    owoceList.RemoveAt(indexInput - 1);
+                                    Console.WriteLine("\nPoprawnie usunięto towar\n");
+                                }
                                 break;
                             default:
                                 break;
@@ -227,21 +237,6 @@ namespace Zaliczenie_Programowanie_Obiektowe
                         Console.WriteLine("Nie rozumiem polecenia. Spróbuj ponownie.");
                         break;
                 }
-            }
-        }
-
-        static void checkList(List<Towar> list, int input)
-        {
-            if (input > list.Count ||
-                input < 1 ||
-                list.Count == 0)
-            {
-                Console.WriteLine("\nError, nie ma takiego towaru.\n");
-            }
-            else
-            {
-                list.RemoveAt(input - 1);
-                Console.WriteLine("\nPoprawnie usunięto towar\n");
             }
         }
     }
