@@ -20,10 +20,14 @@ namespace Zaliczenie_Programowanie_Obiektowe
             napojTest2.Wypisz();
             Console.WriteLine("Czy " + napojTest2.Nazwa + " jest przeterminowany? " + napojTest2.Przeterminowany());
 
+            Chemia chemiaTest = new Chemia("płyn do zmywania", 10.99f, 1.5f, false);
+            chemiaTest.Wypisz();
+            Console.WriteLine("Czy " + chemiaTest.Nazwa + " jest niebezpieczny? " + chemiaTest.Niebezpieczny);
+            Console.WriteLine();
 
             // App command line.
             List<Napoje> napojeList = new List<Napoje> { napojTest, napojTest2 };
-            List<Chemia> chemiaList = new List<Chemia>();
+            List<Chemia> chemiaList = new List<Chemia>() { chemiaTest };
             List<Owoce> owoceList = new List<Owoce>();
 
             bool flagExit = false;
